@@ -1,0 +1,21 @@
+FROM continuumio/miniconda3:latest
+
+MAINTAINER Jeremy Volkening <jdv@base2bio.com>
+
+WORKDIR /nf
+
+# Install dependencies
+COPY environment.yml .
+RUN conda env create -f environment.yml \
+    && rm -rf /opt/conda/pkgs/* && rm -rf /nf
+
+# Create regular user
+RUN useradd -m -U nf
+USER nf
+WORKDIR /home/nf/
+
+# activate the conda environment
+ENV PATH /opt/conda/envs/nf/bin:$PATH
+
+ENTRYPOINT [ "/bin/bash", "-c" ]
+CMD [ "/bin/bash" ]
