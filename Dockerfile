@@ -2,9 +2,8 @@ FROM continuumio/miniconda3:latest
 
 MAINTAINER Jeremy Volkening <jdv@base2bio.com>
 
-WORKDIR /nf
-
 # Install dependencies
+WORKDIR /nf
 COPY environment.yml .
 RUN conda env create -f environment.yml \
     && rm -rf /opt/conda/pkgs/* && rm -rf /nf
