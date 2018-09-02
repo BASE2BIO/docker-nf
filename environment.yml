@@ -6,6 +6,10 @@ channels:
 dependencies:
  - ncurses
  - openjdk
+ - xz
+ - lz4-c
+ - lbzip2
+ - pigz
  - dsrc=2015.06.04
  - awscli>=1.15.16
  - bedtools=2.27.1
