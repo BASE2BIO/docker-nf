@@ -16,5 +16,6 @@ WORKDIR /home/nf/
 # activate the conda environment
 ENV PATH /opt/conda/envs/nf/bin:$PATH
 
+# set entrypoints (both are needed)
 ENTRYPOINT [ "/bin/bash", "-c" ]
 CMD [ "/bin/bash" ]
