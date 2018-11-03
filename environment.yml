@@ -22,7 +22,7 @@ dependencies:
  - khmer=2.1.2
  - krona=2.7
  - mira=4.9.6
- - nextflow=0.29.0
+ - nextflow=18.10.1
  - pear=0.9.6
  - perl>=5.12.0
  - perl-biox-seq
