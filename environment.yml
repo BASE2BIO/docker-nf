@@ -1,12 +1,11 @@
 name: nf
 channels:
- - defaults
- - conda-forge
- - conda-forge::openjdk
  - bioconda
+ - conda-forge
+ - defaults
 dependencies:
  - ncurses
- - openjdk
+ - conda-forge::openjdk
  - xz
  - lz4-c
  - lbzip2
