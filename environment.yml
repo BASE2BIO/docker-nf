@@ -1,8 +1,9 @@
 name: nf
 channels:
- - conda-forge
- - bioconda
  - defaults
+ - conda-forge
+ - conda-forge::openjdk
+ - bioconda
 dependencies:
  - ncurses
  - openjdk
@@ -17,8 +18,8 @@ dependencies:
  - blast=2.7.1
  - bwa=0.7.17
  - centrifuge=1.0.4
- - cutadapt=1.16
- - fastqc=0.11.7
+ - cutadapt=1.18
+ - fastqc=0.11.8
  - khmer=2.1.2
  - krona=2.7
  - mira=4.9.6
@@ -26,8 +27,8 @@ dependencies:
  - pear=0.9.6
  - perl>=5.12.0
  - perl-biox-seq
- - samtools=1.8
- - trim-galore=0.4.5
+ - samtools=1.9
+ - trim-galore=0.5.0
  - perl-app-cpanminus
  - perl-file-sharedir-install
  - perl-dbi
