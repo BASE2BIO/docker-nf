@@ -5,7 +5,7 @@ channels:
  - defaults
 dependencies:
  - ncurses
- - conda-forge::openjdk
+ - openjdk
  - xz
  - lz4-c
  - lbzip2
@@ -18,6 +18,9 @@ dependencies:
  - bwa=0.7.17
  - centrifuge=1.0.4
  - cutadapt=1.18
+# these two are needed for fastqc to work
+ - fontconfig
+ - font-ttf-inconsolata
  - fastqc=0.11.8
  - khmer=2.1.2
  - krona=2.7
