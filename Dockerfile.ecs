@@ -5,7 +5,11 @@ MAINTAINER Jeremy Volkening <jdv@base2bio.com>
 # Install dependencies
 WORKDIR /nf
 COPY environment.yml .
-RUN conda env create -f environment.yml \
+
+# procps provides 'ps' for nextflow
+RUN apt-get update && apt-get install -y \
+      procps \
+    && conda env create -f environment.yml \
     && rm -rf /opt/conda/pkgs/* && rm -rf /nf
 
 # activate the conda environment
