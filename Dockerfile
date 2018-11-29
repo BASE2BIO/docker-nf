@@ -5,7 +5,11 @@ MAINTAINER Jeremy Volkening <jdv@base2bio.com>
 # Install dependencies
 WORKDIR /nf
 COPY environment.yml .
-RUN conda env create -f environment.yml \
+
+# procps provides 'ps' for nextflow
+RUN apt-get update && apt-get install -y \
+      procps \
+    && conda env create -f environment.yml \
     && rm -rf /opt/conda/pkgs/* && rm -rf /nf
 
 # Create regular user
@@ -17,5 +21,4 @@ WORKDIR /home/nf/
 ENV PATH /opt/conda/envs/nf/bin:$PATH
 
 # set entrypoints (both are needed)
-ENTRYPOINT [ "/bin/bash", "-c" ]
 CMD [ "/bin/bash" ]
