@@ -38,4 +38,3 @@ dependencies:
  - perl-file-sharedir-install
  - perl-dbi
  - perl-dbd-sqlite
- - r-colorbrewer
