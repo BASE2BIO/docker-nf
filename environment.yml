@@ -45,3 +45,5 @@ dependencies:
  - perl-dbd-sqlite
  - entrez-direct
  - parallel
+ - raxml
+ - phyml
