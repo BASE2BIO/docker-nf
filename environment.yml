@@ -43,6 +43,7 @@ dependencies:
  - perl-file-sharedir-install
  - perl-dbi
  - perl-dbd-sqlite
+ - perl-yaml-tiny
  - entrez-direct
  - parallel
  - raxml
