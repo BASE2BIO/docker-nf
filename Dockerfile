@@ -9,6 +9,7 @@ COPY environment.yml .
 # procps provides 'ps' for nextflow
 RUN apt-get update && apt-get install -y \
       procps \
+      vim \
     && conda env create -f environment.yml \
     && rm -rf /opt/conda/pkgs/* && rm -rf /nf
 
