@@ -49,3 +49,4 @@ dependencies:
  - raxml
  - phyml
  - fasttree
+ - spades
