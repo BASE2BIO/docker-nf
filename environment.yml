@@ -38,7 +38,7 @@ dependencies:
  - perl-biox-seq
  - perl-bioperl
  - samtools=1.9
- - trim-galore=0.5.0
+ - trim-galore
  - perl-app-cpanminus
  - perl-file-sharedir-install
  - perl-dbi
