@@ -15,12 +15,12 @@ dependencies:
  #- dsrc=2015.06.04
  - amos=3.1.0
  - awscli>=1.15.16
- - bbmap=38.22
+ - bbmap=38.68
  - bedtools=2.27.1
  - blast=2.7.1
  - bwa=0.7.17
  - centrifuge=1.0.4
- - cutadapt=1.18
+ - cutadapt
  - diamond=0.9.24
  - flash=1.2.11
 # these two are needed for fastqc to work
@@ -28,7 +28,7 @@ dependencies:
  - font-ttf-inconsolata
  - fastqc=0.11.8
  - khmer=2.1.2
- - krakenuniq=0.5.7
+ - krakenuniq=0.5.8
  - krona=2.7
  - mafft
  - mira=4.9.6
@@ -50,3 +50,4 @@ dependencies:
  - phyml
  - fasttree
  - spades
+ - python>=3.0
